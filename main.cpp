@@ -12,9 +12,6 @@ DWORD WINAPI Menue() {
     AllocConsole();
     FILE* fp;
     freopen_s(&fp, "CONOUT$", "w", stdout); // output only
-
-    uintptr_t testabc = mem::FindAddress(moduleBase + 0x01F1BFF0, { 0x40, 0xB8, 0x0, 0x20 });
-    std::cout << "Injection successful!" << std::endl;
     
     // MessageBox(NULL, TEXT("Injection successful!"), TEXT("ROST MENU"), MB_OK);
 
